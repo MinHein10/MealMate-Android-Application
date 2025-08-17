@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- Main Title -->
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Favorite Meal Plan"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+
+        <!-- This Week Section -->
+        <TextView
+            android:id="@+id/title_this_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This Week"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/purple_200"
+            android:layout_marginBottom="8dp" />
+
+        <!-- RecyclerView for This Week -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_favourites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <!-- No Items Image for This Week -->
+        <ImageView
+            android:id="@+id/noFavourites"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/nodata"
+            android:visibility="gone"
+            android:layout_marginTop="16dp" />
+
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_primary"
+            android:layout_marginVertical="16dp" />
+
+
+        <!-- Last Week Section -->
+        <TextView
+            android:id="@+id/title_last_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Week"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/purple_200"
+            android:layout_marginBottom="8dp" />
+
+        <!-- RecyclerView for Last Week -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_last_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <!-- No Items Image for Last Week -->
+        <ImageView
+            android:id="@+id/noLastWeekItems"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/nodata"
+            android:visibility="gone"
+            android:layout_marginTop="16dp" />
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

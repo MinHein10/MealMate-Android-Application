@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MealMate</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="recipe">My Recipes</string>
+    <string name="grocery">Grocery List</string>
+    <string name="plan">Meal Plan</string>
+    <string name="google_map_api">AIzaSyDFLE6rOXeJ87t8DlKC_ZCytdd9X1eX5A0</string>
+
+</resources>
